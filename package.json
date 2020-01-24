@@ -1,5 +1,8 @@
 {
     "name": "my-resume-site",
     "author": "Dan Walsh",
-    "email": "dan.walsh@outlook.com.au"
+    "email": "dan.walsh@outlook.com.au",
+    "scripts": {
+        "build": ""
+    }
 }

@@ -4,5 +4,8 @@
     "email": "dan.walsh@outlook.com.au",
     "scripts": {
         "build": ""
+    },
+    "dependencies": {
+        "bulma": "^0.8.0"
     }
 }

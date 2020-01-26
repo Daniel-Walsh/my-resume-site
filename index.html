@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Web Developer | Dan Walsh</title>
 </head>
-<body class="fadein">
-    <main class="container">
+<body class="">
 
-        <section class="header">
-            <h1>Hi, my name is Dan&nbsp;Walsh&nbsp;<span class="wave" aria-hidden="false">👋</span></h1>
-            <p class="subheading">
-                I'm a web developer, based in Geelong.
-            </p>
-            <p class="narrow">
-                Whether it's front- or back-end, I love emersing myself in challenging coding problems and developing creative solutions that best fit my client's needs.
-            </p>
-            <p class="narrow">
-                I'm passionate about all things CSS and JavaScript.
-            </p>
+    <progress class="progress is-primary" value="0" max="100">15%</progress>
+    <a href="#" id="logo-float" aria-hidden="true">
+        <img class="logo-float hide" src="/assets/img/dw-logo.svg" alt="">
+    </a>
+
+    <main class="content">
+    <!-- <main class="container"> -->
+
+        <section class="header hero is-medium is-dark is-fullheight">
+            <div class="hero-body">
+
+                <div class="container">
+                    <img class="logo" src="/assets/img/dw-logo-dark.svg" alt="">
+                    <h1 class="title is-1">Hi, my name is <span class="has-text-primary">Dan&nbsp;Walsh</span>&nbsp;<span class="wave" aria-hidden="false">👋</span></h1>
+                    <p class="subtitle is-3">
+                        I'm a web developer, based in Geelong.
+                    </p>
+                    <p class="">
+                        Whether it's front- or back-end, I love emersing myself in challenging coding problems and developing creative solutions that best fit my client's needs.
+                    </p>
+                    <p class="">
+                        I'm passionate about all things CSS and JavaScript.
+                    </p>
+                </div>
+            </div>
             <div id="scroll-down"><div></div></div>
         </section>
 
-        <section class="experience">
-            <div class="fadein">
-                <h2>Experience 👨‍💻</h2>
+        <section class="experience section is-medium">
+            <div class="container fadein">
+                <h2 class="title is-2">Experience 👨‍💻</h2>
                 <ul>
                     <li></li>
                     <li></li>
@@ -35,16 +49,53 @@
             </div>
         </section>
 
-        <section class="my-work">
-            <div class="fadein">
+        <section class="my-work section is-medium">
+            <div class="container fadein">
 
-                <h2>Work I've Done 👷‍♂️</h2>
-                <div class="work">
+                <h2 class="title is-2">Work I've Done 👷‍♂️</h2>
+
+                <div class="columns work">
+                    <div class="column is-two-fifths has-text-right">
+                        <h3 class="title is-3">Website &amp Dev Ops</h3>
+                        <p class="subtitle is-5">Lort Smith Animal Hospital</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corporis ex. Tempora nisi blanditiis veniam at eos ad dicta quibusdam hic commodi.</p>
+                        <a class="button is-primary has-text-dark" href="https://www.lortsmith.com" rel="noreferrer" target="_blank">View site</a>
+                    </div>
+                    <div class="column">
+                        <img class="lazy" data-lazy="/assets/img/lortsmith.png" alt="">
+                    </div>
+                </div>
+
+                <div class="columns work">
+                    <div class="column">
+                        <img class="lazy" data-lazy="/assets/img/delwp-vwa.png" alt="">
+                    </div>
+                    <div class="column is-two-fifths">
+                        <h3 class="title is-3">Data Visualisation Website</h3>
+                        <p class="subtitle is-5">Department of Environment, Land, Water &amp; Planning</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corporis ex. Tempora nisi blanditiis veniam at eos ad dicta quibusdam hic commodi.</p>
+                        <a class="button is-primary has-text-dark" href="https://howmuch.water.vic.gov.au" rel="noreferrer" target="_blank">View site</a>
+                    </div>
+                </div>
+
+                <div class="columns work">
+                    <div class="column is-two-fifths has-text-right">
+                        <h3 class="title is-3">Website</h3>
+                        <p class="subtitle is-5">Western Victoria PHN</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corporis ex. Tempora nisi blanditiis veniam at eos ad dicta quibusdam hic commodi.</p>
+                        <a class="button is-primary has-text-dark" href="https://www.westvicphn.com.au" rel="noreferrer" target="_blank">View site</a>
+                    </div>
+                    <div class="column">
+                        <img class="lazy" data-lazy="/assets/img/westvicphn.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- <div class="work">
                     <div>
                         <h3>Website &amp Dev Ops</h3>
                         <p class="subheading">Lort Smith Animal Hospital</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corporis ex. Tempora nisi blanditiis veniam at eos ad dicta quibusdam hic commodi.</p>
-                        <a class="btn" href="https://www.lortsmith.com" rel="noreferrer" target="_blank">View site</a>
+                        <a class="button is-dark" href="https://www.lortsmith.com" rel="noreferrer" target="_blank">View site</a>
                     </div>
                     <img class="lazy" data-lazy="/assets/img/lortsmith.png" alt="">
                 </div>
@@ -53,7 +104,7 @@
                         <h3>Data Visualisation Website</h3>
                         <p class="subheading">Department of Environment, Land, Water &amp; Planning</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corporis ex. Tempora nisi blanditiis veniam at eos ad dicta quibusdam hic commodi.</p>
-                        <a class="btn" href="https://howmuch.water.vic.gov.au" rel="noreferrer" target="_blank">View site</a>
+                        <a class="button is-dark" href="https://howmuch.water.vic.gov.au" rel="noreferrer" target="_blank">View site</a>
                     </div>
                     <img class="lazy" data-lazy="/assets/img/delwp-vwa.png" alt="">
                 </div>
@@ -62,30 +113,48 @@
                         <h3>Website</h3>
                         <p class="subheading">Western Victoria PHN</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corporis ex. Tempora nisi blanditiis veniam at eos ad dicta quibusdam hic commodi.</p>
-                        <a class="btn" href="https://www.westvicphn.com.au" rel="noreferrer" target="_blank">View site</a>
+                        <a class="button is-dark" href="https://www.westvicphn.com.au" rel="noreferrer" target="_blank">View site</a>
                     </div>
                     <img class="lazy" data-lazy="/assets/img/westvicphn.png" alt="">
-                </div>
+                </div> -->
             </div>
         </section>
 
-        <section class="footer fadein">
-            <h2>Get In Touch 📨</h2>
-            <form action="">
-                <div class="form-group">
-                    <label for="contact-name">Name</label>
-                    <input type="text" name="contact-name" id="contact-name">
-                </div>
-                <div class="form-group">
-                    <label for="contact-email">Email</label>
-                    <input type="email" name="contact-email" id="contact-email">
-                </div>
-                <div class="form-group">
-                    <label for="contact-message">Message</label>
-                    <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="btn btn-primary" type="submit">Send</button>
-            </form>
+        <section class="footer fadein section is-medium">
+            <div class="container">
+
+                <h2 class="title is-2">Get In Touch 📨</h2>
+                <form action="">
+                    
+                    <div class="field">
+                        <label for="contact-name" class="label">Name</label>
+                        <div class="control">
+                            <input id="contact-name" name="contact-name"  class="input" type="text" placeholder="Enter your name">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="contact-email" class="label">Email</label>
+                        <div class="control">
+                            <input id="contact-email" name="contact-email" class="input" type="email" placeholder="Enter your email address">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="contact-message" class="label">Message</label>
+                        <div class="control">
+                            <textarea id="contact-message" name="contact-message" class="textarea" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                      
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary has-text-dark" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
         </section>
         
     </main>

@@ -344,4 +344,12 @@ form .form-group label {
 div.columns.work:not(:last-child) {
   margin-bottom: 4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .is-order-2-tablet {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
 /*# sourceMappingURL=main.css.map */

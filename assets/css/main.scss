@@ -197,3 +197,11 @@ form {
 div.columns.work:not(:last-child){
     margin-bottom: 4rem;
 }
+
+.is {
+    &-order-2-tablet {
+        @media screen and (min-width: 768px) {
+            order: 2;
+        }
+    }
+}

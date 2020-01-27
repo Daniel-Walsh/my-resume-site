@@ -2,7 +2,7 @@ const FADE_OFFSET = 250;
 
 function checkScrollPosition() {
 
-    var scrollPerent = Math.round((window.scrollY / (document.getElementsByTagName('body')[0].scrollHeight - window.innerHeight)) * 100);
+    var scrollPerent = Number.parseFloat((window.scrollY / (document.getElementsByTagName('body')[0].scrollHeight - window.innerHeight)) * 100).toFixed(3);
 
     document.getElementsByTagName('progress')[0].setAttribute('value', scrollPerent);
 

@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap");
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/assets/fonts/Ubuntu-Regular.woff2") format("woff2"), url("/assets/fonts/Ubuntu-Regular.woff") format("woff"), url("/assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("/assets/fonts/OpenSans-Regular.woff") format("woff"), url("/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
   transition: opacity 1s ease-out, -webkit-transform 1s ease-out;

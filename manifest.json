@@ -1,0 +1,22 @@
+{
+    "name": "Dan Walsh, Web Developer",
+    "short_name": "Dan Walsh",
+    "theme_color": "#00d1b2",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/index.html",
+    "icons": [
+        {
+            "src": "/assets/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+  }

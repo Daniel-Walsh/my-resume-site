@@ -18,11 +18,6 @@ function checkScrollPosition() {
     
     var hiddenElements = document.getElementsByClassName('fadein');
     
-    // if (hiddenElements.length === 0) {
-    //     document.removeEventListener('scroll', checkScrollPosition);
-    //     return;
-    // }
-
     for (i = 0; i < hiddenElements.length; i++) {
         elem = hiddenElements[i];
         elemY = elem.getBoundingClientRect().y;
@@ -52,7 +47,6 @@ window.onload = function() {
 
     // Reveal the page after 1 sec
     setTimeout(() => {
-        // document.getElementsByTagName('body')[0].classList.remove('fadein');
         document.addEventListener('scroll', checkScrollPosition);
     }, 1000);
 };

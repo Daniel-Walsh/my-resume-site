@@ -49,5 +49,6 @@ window.onload = function() {
     setTimeout(() => {
         document.getElementById('loading-screen').classList.add('hide');
         document.addEventListener('scroll', checkScrollPosition);
+        checkScrollPosition();
     }, 1000);
 };

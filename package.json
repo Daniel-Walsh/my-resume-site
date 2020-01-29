@@ -3,7 +3,7 @@
     "author": "Dan Walsh",
     "email": "dan.walsh@outlook.com.au",
     "scripts": {
-        "css:concat": "cat assets/css/*.css > assets/css/bundle.css",
+        "css:concat": "cat assets/css/bulma.min.css assets/css/main.css > assets/css/bundle.css",
         "cssnext": "cat assets/css/bundle.css | postcss -u postcss-cssnext > assets/css/bundle.next.css",
         "css:comb": "csscomb assets/css/bundle.next.css",
         "css:uncss": "cat index.html | uncss -s assets/css/bundle.next.css > assets/css/bundle.clean.css",

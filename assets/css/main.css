@@ -117,8 +117,33 @@ main.content {
           animation-delay: 2s;
 }
 
+ul.socials {
+  margin: 3rem 0 !important;
+  list-style: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+ul.socials li {
+  padding-left: 0 !important;
+  margin: 0 1rem;
+}
+
+ul.socials li img {
+  width: 2rem;
+  height: auto;
+}
+
 .hide {
   opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 #scroll-down {

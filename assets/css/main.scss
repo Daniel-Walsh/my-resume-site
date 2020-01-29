@@ -114,8 +114,27 @@ main.content {
     animation-delay: 2s;
 }
 
+ul.socials {
+    margin: 3rem 0 !important;
+    list-style: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    li {
+        padding-left: 0 !important;
+        margin: 0 1rem;
+
+        img {
+            width: 2rem;
+            height: auto;
+        }
+    }
+}
+
 .hide {
     opacity: 0 !important;
+    pointer-events: none !important;
 }
 
 #scroll-down {

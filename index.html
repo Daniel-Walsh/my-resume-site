@@ -20,7 +20,12 @@
 </head>
 <body>
 
-    <progress class="progress is-primary" value="0" max="100" aria-hidden="true">15%</progress>
+    <div id="loading-screen">
+        <div><img class="logo-loader" src="/assets/img/dw-logo.svg" alt=""></div>
+        <div><progress class="progress is-small is-primary" max="100">15%</progress></div>
+    </div>
+
+    <progress id="scroll-progress" class="progress is-primary" value="0" max="100" aria-hidden="true">15%</progress>
 
     <a href="#" id="logo-float" aria-hidden="true">
         <img class="logo-float hide" src="/assets/img/dw-logo.svg" alt="">

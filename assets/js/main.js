@@ -4,7 +4,7 @@ function checkScrollPosition() {
 
     var scrollPerent = Number.parseFloat((window.scrollY / (document.getElementsByTagName('body')[0].scrollHeight - window.innerHeight)) * 100).toFixed(3);
 
-    document.getElementsByTagName('progress')[0].setAttribute('value', scrollPerent);
+    document.getElementById('scroll-progress').setAttribute('value', scrollPerent);
 
     if (window.scrollY > window.innerHeight) {
         document.getElementsByClassName('logo-float')[0].classList.remove('hide');
@@ -47,6 +47,7 @@ window.onload = function() {
 
     // Reveal the page after 1 sec
     setTimeout(() => {
+        document.getElementById('loading-screen').classList.add('hide');
         document.addEventListener('scroll', checkScrollPosition);
     }, 1000);
 };
